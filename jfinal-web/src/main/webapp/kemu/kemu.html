@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Insert title here</title>
+</head>
+<body>
+<a href="/student">返回</a><br>
+<table id="listtable" border="1">
+    <tbody>
+    <tr>
+        <th>学生编号</th>
+        <th>语文成绩</th>
+        <th>英语成绩</th>
+        <th>数学成绩</th>
+        <th>总成绩</th>
+    </tr>
+    #for(x : l)
+    <tr>
+        <td style="text-align:left;">#(x.id)</td>
+        <td style="text-align:left;">#(x.chinese)</td>
+        <td style="text-align:left;">#(x.english)</td>
+        <td style="text-align:left;">#(x.math)</td>
+        <td style="text-align:left;">#(x.sum)</td>
+
+    </tr>
+    #end
+    </tbody>
+</table>
+</body>
+</html>

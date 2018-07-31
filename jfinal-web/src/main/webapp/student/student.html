@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript" src="/jquery-1.12.4.min.js"></script>
+</head>
+<body>
+<a href="/kemu/add">添加</a><br>
+<a href="/student">返回</a><br>
+
+<table id="listtable" border="1">
+    <tbody>
+    <tr>
+        <th>id</th>
+        <th>学生编号</th>
+        <th>科目</th>
+        <th>成绩</th>
+        <th>操作</th>
+    </tr>
+    #for(x : list)
+    <tr>
+        <td style="text-align:left;">#(x.id)</td>
+        <td style="text-align:left;">#(x.num)</td>
+        <td style="text-align:left;">#(x.name)</td>
+        <td style="text-align:left;">#(x.scope)</td>
+        <td style="text-align:left;">
+            &nbsp;&nbsp;<a href="/kemu/delete1/#(x.id)">删除成绩</a>
+        </td>
+    </tr>
+    #end
+    </tbody>
+</table>
+</body>
+</html>

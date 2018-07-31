@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="com.alibaba.druid:druid-wrapper:0.2.9" type="repository">
+    <properties maven-id="com.alibaba.druid:druid-wrapper:0.2.9" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/alibaba/druid/druid-wrapper/0.2.9/druid-wrapper-0.2.9.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/alibaba/druid/0.2.9/druid-0.2.9.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
