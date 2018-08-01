@@ -7,7 +7,7 @@
 </head>
 <body>
 <a href="/student">返回</a><br>
-<form action="/student/add" method="post">
+<form action="/student/save" method="post">
 <table id="listtable" border="1">
     <tbody>
     <tr>
@@ -17,14 +17,13 @@
         <th>操作</th>
     </tr>
     <tr>
-        <td style="text-align:left;"><input id="num" type="text"/></td>
-        <td style="text-align:left;"><input id="name" type="text"/></td>
-        <td style="text-align:left;"><input id="scope" type="text"/></td>
+        <td style="text-align:left;"><input id="num" type="text" name="num"/></td>
+        <td style="text-align:left;"><input id="name" type="text" name="name"/></td>
+        <td style="text-align:left;"><input id="scope" type="text" name="scope"/></td>
         <td style="text-align:left;">
             &nbsp;&nbsp;<input type="submit" value="添加">
         </td>
     </tr>
-    #end
     </tbody>
 </table>
 </form>

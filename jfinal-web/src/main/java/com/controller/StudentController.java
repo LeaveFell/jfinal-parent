@@ -74,9 +74,17 @@ public class StudentController extends Controller {
          行数据注入。建议优先使用 getBean 方法。
          */
 
-        getModel(Student.class).save();
-        redirect("/student");
+        Student student = getModel(Student.class);//别名  Jfinal 必杀技快速开发全靠它
+        student.set("num", "11");
+        student.set("name", "11");
+        student.set("scope", "11");
+        boolean flag = student.save();
+        if (flag) {
+            redirect("/student");
+        } else {
+            renderText("sorry,插入失败！！");
+
+        }
+
     }
-
-
 }
